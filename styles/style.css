@@ -205,6 +205,340 @@ section:nth-child(even) {
   background-color: var(--green);
 }
 
+.heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.sub_heading {
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.dishes .box_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+
+.dishes .box_container .box {
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dishes .box_container .box .fa-heart,
+.dishes .box_container .box .fa-eye {
+  position: absolute;
+  top: 1.5rem;
+  background: #eee;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.dishes .box_container .box img {
+  height: 17rem;
+  /* width: 100%; */
+  margin: 1rem 0;
+}
+
+.dishes .box_container .box h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+.dishes .box_container .box .stars {
+  padding: 1rem 0;
+}
+.dishes .box_container .box .stars i {
+  font-size: 1.7rem;
+  color: var(--green);
+}
+
+.dishes .box_container .box span {
+  color: var(--light-color);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.dishes .box_container .box .fa-heart {
+  right: -15rem;
+}
+.dishes .box_container .box .fa-eye {
+  left: -15rem;
+}
+.dishes .box_container .box:hover .fa-heart {
+  right: 1.5rem;
+}
+.dishes .box_container .box:hover .fa-eye {
+  left: 1.5rem;
+}
+
+.dishes .box_container .box .fa-heart:hover,
+.dishes .box_container .box .fa-eye:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+.aboutUs {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  transition: all 0.3s ease;
+}
+
+.aboutUs .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.aboutUs .row .image {
+  flex: 1 1 45rem;
+  overflow: hidden;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.aboutUs .row .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.aboutUs .row .image:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.aboutUs .row .content {
+  flex: 1 1 45rem;
+  transition: transform 0.3s ease;
+}
+
+.aboutUs .row .content h3 {
+  color: var(--black);
+  font-size: 4rem;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.aboutUs .row .content p {
+  color: var(--black);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  line-height: 2;
+  transition: opacity 0.3s ease;
+}
+
+.aboutUs .row .content:hover h3 {
+  color: var(--green); /* Change heading color on hover */
+}
+
+.aboutUs .row .content:hover p {
+  opacity: 0.7; /* Fade out paragraph text on hover */
+}
+
+.aboutUs .row .content .icons_container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+}
+
+.aboutUs .row .content .icons_container .icons {
+  background: #eee;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 17rem;
+  padding: 1.5rem 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.aboutUs .row .content .icons_container .icons i {
+  font-size: 2.5rem;
+  color: var(--green);
+  transition: transform 0.3s ease;
+}
+
+.aboutUs .row .content .icons_container .icons span {
+  font-size: 1.5rem;
+  color: var(--black);
+  transition: transform 0.3s ease;
+}
+
+.aboutUs .row .content .icons_container .icons:hover {
+  background: var(--green);
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.aboutUs .row .content .icons_container .icons:hover i {
+  transform: scale(1.1); /* Icon grow effect on hover */
+}
+
+.aboutUs .row .content .icons_container .icons:hover span {
+  transform: scale(1.1); /* Text grow effect on hover */
+}
+
+.menu .box_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.menu .box_container .box{
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu .box_container .box:hover {
+  transform: translateY(-10px);  /* Lift effect on hover */
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);  /* Stronger shadow on hover */
+}
+
+.menu .box_container .box .image {
+  height: 25rem;
+  width: 100%;
+  padding: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.menu .box_container .box .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu .box_container .box .image:hover img {
+  transform: scale(1.1);  /* Zoom effect on hover */
+}
+
+.menu .box_container .box .image .fa-heart {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 50%;
+  color: var(--black);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu .box_container .box .image .fa-heart:hover {
+  background-color: var(--green);
+  color: #fff;
+  transform: scale(1.2);  /* Slight grow effect */
+}
+
+.menu .box_container .box .content {
+  padding: 2rem;
+  padding-top: 0;
+  transition: background-color 0.3s ease;
+}
+
+.menu .box_container .box:hover .content {
+  background-color: #f9f9f9;  /* Light background color change on hover */
+}
+
+.menu .box_container .box .content .stars {
+  padding-bottom: 1rem;
+}
+
+.menu .box_container .box .content .stars i {
+  font-size: 1.7rem;
+  color: var(--green);
+  transition: transform 0.3s ease;
+}
+
+.menu .box_container .box .content .stars i:hover {
+  transform: scale(1.2);  /* Slight grow effect on hover */
+}
+
+.menu .box_container .box .content h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  transition: color 0.3s ease;
+}
+
+.menu .box_container .box .content h3:hover {
+  color: var(--green);  /* Change text color on hover */
+}
+
+.menu .box_container .box .content p {
+  color: var(--light-color);
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+  line-height: 1.5;
+  transition: opacity 0.3s ease;
+}
+
+.menu .box_container .box .content:hover p {
+  opacity: 0.7;  /* Fade effect on paragraph text hover */
+}
+
+.menu .box_container .box .content .price {
+  color: var(--green);
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.menu .box_container .box .content .price:hover {
+  transform: scale(1.1);  /* Price grows on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 @media (max-width: 991px) {
   html {
@@ -259,5 +593,10 @@ section:nth-child(even) {
 @media (max-width: 991px) {
   html {
     font-size: 50%;
+  }
+
+  .dishes .box_container .box img {
+    height: auto;
+    width: 100%;
   }
 }
