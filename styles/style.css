@@ -408,7 +408,7 @@ section:nth-child(even) {
   transition: all 0.3s ease;
 }
 
-.menu .box_container .box{
+.menu .box_container .box {
   background: #fff;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
@@ -417,8 +417,8 @@ section:nth-child(even) {
 }
 
 .menu .box_container .box:hover {
-  transform: translateY(-10px);  /* Lift effect on hover */
-  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);  /* Stronger shadow on hover */
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
 }
 
 .menu .box_container .box .image {
@@ -439,7 +439,7 @@ section:nth-child(even) {
 }
 
 .menu .box_container .box .image:hover img {
-  transform: scale(1.1);  /* Zoom effect on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
 }
 
 .menu .box_container .box .image .fa-heart {
@@ -460,7 +460,7 @@ section:nth-child(even) {
 .menu .box_container .box .image .fa-heart:hover {
   background-color: var(--green);
   color: #fff;
-  transform: scale(1.2);  /* Slight grow effect */
+  transform: scale(1.2); /* Slight grow effect */
 }
 
 .menu .box_container .box .content {
@@ -470,7 +470,7 @@ section:nth-child(even) {
 }
 
 .menu .box_container .box:hover .content {
-  background-color: #f9f9f9;  /* Light background color change on hover */
+  background-color: #f9f9f9; /* Light background color change on hover */
 }
 
 .menu .box_container .box .content .stars {
@@ -484,7 +484,7 @@ section:nth-child(even) {
 }
 
 .menu .box_container .box .content .stars i:hover {
-  transform: scale(1.2);  /* Slight grow effect on hover */
+  transform: scale(1.2); /* Slight grow effect on hover */
 }
 
 .menu .box_container .box .content h3 {
@@ -494,7 +494,7 @@ section:nth-child(even) {
 }
 
 .menu .box_container .box .content h3:hover {
-  color: var(--green);  /* Change text color on hover */
+  color: var(--green); /* Change text color on hover */
 }
 
 .menu .box_container .box .content p {
@@ -506,7 +506,7 @@ section:nth-child(even) {
 }
 
 .menu .box_container .box .content:hover p {
-  opacity: 0.7;  /* Fade effect on paragraph text hover */
+  opacity: 0.7; /* Fade effect on paragraph text hover */
 }
 
 .menu .box_container .box .content .price {
@@ -517,27 +517,205 @@ section:nth-child(even) {
 }
 
 .menu .box_container .box .content .price:hover {
-  transform: scale(1.1);  /* Price grows on hover */
+  transform: scale(1.1); /* Price grows on hover */
+}
+
+#review {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.review .slide {
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.review .slide .fa-quote-right {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 6rem;
+  color: #ccc;
+}
+
+.review .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.review .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .slide .user h3 {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.review .slide .user .stars i {
+  font-size: 1.3rem;
+  color: var(--green);
+}
+
+.review .slide p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding-top: 1rem;
+}
+
+.order {
+  padding-bottom: 5rem;
+}
+
+.order form {
+  max-width: 90rem;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.order form .inputBox {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order form .inputBox .input {
+  width: 49%;
+}
+
+.order form .inputBox .input span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea {
+  width: 100%;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  background: #eee;
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus {
+  border: 0.1rem solid var(--green);
+}
+
+.order form .inputBox .input textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.order form .inputBox .input input[type="submit"] {
+  background: var(--black);
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
 
+.footer .box_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+  text-align: center;
+}
 
+.footer .box_container .box{
+  padding: 1rem 2rem;
+}
 
+.footer .box_container .box h3 {
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  color: var(--black);
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
 
+/* Optional: subtle underline animation on heading hover */
+.footer .box_container .box h3:hover {
+  color: var(--green);
+  transform: translateY(-4px);
+}
 
+.footer .box_container .box a {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  transition: all 0.25s ease;
+  position: relative;
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
 
+.footer .box_container .box a::after {
+  content: '';
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--green);
+  transition: width 0.3s ease;
+}
 
+.footer .box_container .box a:hover {
+  color: var(--green);
+  text-decoration: none; /* Remove default underline for cleaner custom effect */
+  transform: translateX(4px) scale(1.05); /* Subtle scaling on hover */
+}
 
+.footer .box_container .box a:hover::after {
+  width: 100%;
+}
 
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  color: var(--black);
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
+/* Hover effect on footer credit */
+.footer .credit:hover {
+  opacity: 0.85;
+  transform: translateY(-3px); /* Subtle lift on hover */
+}
 
-
-
-
-
-
-
-
+.footer .credit span {
+  color: var(--green);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
 /* media queries */
 @media (max-width: 991px) {
@@ -590,13 +768,17 @@ section:nth-child(even) {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 450px) {
   html {
     font-size: 50%;
   }
 
   .dishes .box_container .box img {
     height: auto;
+    width: 100%;
+  }
+
+  .order form .inputBox .input {
     width: 100%;
   }
 }
